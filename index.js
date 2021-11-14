@@ -20,4 +20,6 @@ io.on('connection', (socket)=>{
     })
 })
 
-server.listen(1111, ()=>console.log('listening at 1111'));
+const port = process.env.PORT || 1111;
+
+server.listen(port, ()=>console.log('listening at 1111'));
